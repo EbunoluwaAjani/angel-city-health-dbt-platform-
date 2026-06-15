@@ -1,1 +1,1 @@
-dbt-snowflake
+dbt-snowflake==1.11.5
