@@ -33,8 +33,9 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Run dbt Slim CI
-        working-directory: ./angel_city
+      - name: Debug workspace
         run: |
-          dbt deps
+          pwd
+          ls -la
+          find . -name "dbt_project.yml"
           
