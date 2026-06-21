@@ -19,7 +19,7 @@ jobs:
       SNOWFLAKE_PRIVATE_KEY: "${{ secrets.SNOWFLAKE_PRIVATE_KEY}}"
       SNOWFLAKE_PRIVATE_KEY_PASSPHRASE: "${{ secrets.SNOWFLAKE_PRIVATE_KEY_PASSPHRASE }}"
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Run CI
         run: |
           echo "Running CI tasks..."
