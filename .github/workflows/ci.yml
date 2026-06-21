@@ -34,6 +34,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run dbt Slim CI
+        working-directory: ./angel_city
         run: |
           dbt deps
           
