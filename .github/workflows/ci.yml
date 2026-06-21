@@ -33,9 +33,9 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Debug workspace
+      - name: Run dbt commands
         run: |
-          pwd
-          ls -la
-          find . -name "dbt_project.yml"
+          cd angel_city
+          dbt debug
+          dbt deps
           
